@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-function facto(no, resultado){
+function obtenerFactorial(no, resultado){
 		if (no==0 || no==1){
 		resultado= 1;
 		return resultado;
@@ -17,7 +17,7 @@ $("form").on("submit",function(event){
 
 	var no= parseInt($("input#numero").val());
 	var resultado= parseInt($("input#numero").val());
-	var result = facto(no, resultado);
+	var result = obtenerFactorial(no, resultado);
 	console.log(result);
 
 		$("#tabla").append("<tr><td>" + no + "</td><td>" + result + "</td></tr>");
